@@ -1,0 +1,26 @@
+header {
+  padding: 25px 0px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+ul {
+  display: flex;
+  gap: 15px;
+  color: blue;
+  text-decoration: none;
+}
+
+li {
+  text-decoration: none;
+}

@@ -1,0 +1,41 @@
+.projet{
+    padding: 120px 0;
+}
+
+.projet-carte {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: whitesmoke;
+    width: 30%;
+}
+
+.projet-image {
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+
+.projet-titre {
+  .projet-titre {
+    margin: 15px 0;
+}
+}
+
+.projet-description {
+  font-size: 16px;
+}
+
+.projet-tech {
+    margin-bottom: 15px;
+}
+
+.projet-btn {
+  display: inline-block;
+  border: 1px dotted black;
+  background-color: rgb(71, 71, 163);
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-weight: 600;
+
+}
