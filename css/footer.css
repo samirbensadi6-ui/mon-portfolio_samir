@@ -1,0 +1,33 @@
+.footer {
+  /* fond */
+  padding: 90px 0px;
+}
+
+.footer-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.footer h2 {
+  margin-bottom: 20px;
+}
+
+.footer p {
+  /* couleur */
+  /* espacement */
+  line-height: 1.6;
+}
+
+.footer-links {
+  /* espacement */
+}
+
+.footer-links a {
+  /* style des liens */
+}
+
+.footer-links a:hover {
+  background-color: grey;
+  border-radius: 5px;
+}

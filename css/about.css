@@ -1,15 +1,64 @@
-.about{
-  padding: 120px 0;
+.about {
+  padding: 100px 0;
+  background-color: rgba(221, 221, 16, 0.788);
+  border-radius: 10px;
 }
 
-.about-contenu{
-    width: 45%;
+.about-layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.about-image{
+.about-contenu {
+  max-width: 45%;
+}
+
+.about-image {
+  padding: 45px;
+}
+
+.about-texte {}
+
+.about-btn {
+  display: inline-block;
+  padding: 15 30px;
+}
+
+/* Mes petits plus */
+
+.about-plus {
+   margin-top:80px;
+}
+
+.plus-grid {
+   display:flex;
+    gap:20px;
+}
+
+.plus-card {
+    background:#111;
+    color:white;
+    padding:30px;
+    border-radius:15px;
+}
+
+.plus-card i{
+    font-size:30px;
+    margin-bottom:20px;
+}
+
+.plus-card h4{
+    margin-bottom:15px;
+}
+
+.plus-card p{
+    font-size:15px;
+    line-height:1.6;
+}
+
+.plus-title {
 
 }
 
-.about-texte{
-
-}
+.plus-text {}
