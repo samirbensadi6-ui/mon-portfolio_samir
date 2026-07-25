@@ -1,6 +1,6 @@
 .about {
   padding: 120px 0;
-  background-color: rgba(221, 221, 16, 0.788);
+  /*background-color: rgba(221, 221, 16, 0.788);*/
   border-radius: 10px;
 }
 
@@ -31,6 +31,11 @@
   text-align: center;
 }
 
+.about-sous-titre {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
 .about-btn {
   display: inline-block;
   border: 1px dotted black;
@@ -45,11 +50,20 @@
 .about-carte{
   border: 1px solid black;
   border-radius: 16px;
-  padding: 20px;
+  padding: 100px;
+  margin: 0 auto;
+  color: white;
   background-color: black;
-  width: 30%;
+  width: 80%;
   display: flex;
   flex-direction: column;
+}
+
+.about-action {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: auto;
 }
 
 
