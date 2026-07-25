@@ -1,65 +1,92 @@
 .about {
-  padding: 100px 0;
+  padding: 120px 0;
   background-color: rgba(221, 221, 16, 0.788);
   border-radius: 10px;
 }
 
 .about-layout {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-layout p {
+  line-height: 1.7;
 }
 
 .about-contenu {
   max-width: 45%;
 }
 
+.about-texte {
+  margin-top: 25px;
+}
+
 .about-image {
   padding: 45px;
 }
 
-.about-texte {}
+.about-titre {
+  margin-bottom: 20px;
+  text-align: center;
+}
 
 .about-btn {
   display: inline-block;
-  padding: 15 30px;
+  border: 1px dotted black;
+  color: white;
+  background-color: rgb(71, 71, 163);
+  padding: 10px 25px;
+  border-radius: 10px;
+  font-weight: 600;
+  margin-bottom: 25px;
 }
+
+.about-carte{
+  border: 1px solid black;
+  border-radius: 16px;
+  padding: 20px;
+  background-color: black;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+
 
 /* Mes petits plus */
 
 .about-plus {
-   margin-top:80px;
+  margin-top: 80px;
 }
 
 .plus-grid {
-   display:flex;
-    gap:20px;
+  display: flex;
+  gap: 20px;
 }
 
 .plus-card {
-    background:#111;
-    color:white;
-    padding:30px;
-    border-radius:15px;
-    margin-left: 15px;
+  background: #111;
+  color: white;
+  padding: 30px;
+  border-radius: 15px;
+  margin-left: 15px;
 }
 
-.plus-card i{
-    font-size:30px;
-    margin-bottom:20px;
+.plus-card i {
+  font-size: 30px;
+  margin-bottom: 20px;
 }
 
-.plus-card h4{
-    margin-bottom:15px;
+.plus-card h4 {
+  margin-bottom: 15px;
 }
 
-.plus-card p{
-    font-size:15px;
-    line-height:1.6;
+.plus-card p {
+  font-size: 15px;
+  line-height: 1.6;
 }
 
-.plus-title {
-
-}
+.plus-title {}
 
 .plus-text {}

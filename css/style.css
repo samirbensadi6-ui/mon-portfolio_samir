@@ -11,3 +11,19 @@
 @import url("about.css");
 @import url("contact.css");
 @import url("footer.css");
+
+/* Boutons */
+.btn {
+  display: inline-block;
+  border: 1px dotted black;
+  color: white;
+  background-color: rgb(71, 71, 163);
+  padding: 10px 25px;
+  border-radius: 10px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.btn:hover {
+  background-color: black;
+}

@@ -1,47 +1,56 @@
-.projet{
-    padding: 120px 0;
+.projet {
+  padding: 120px 0;
 }
 
 .projet-layout {
   justify-content: space-between;
-  align-items: center;
   display: flex;
+  margin-top: 25px;
 }
 
 .projet-carte {
-    border: 1px solid black;
-    border-radius: 10px;
-    padding: 20px;
-    background-color:whitesmoke;
-    width: 30%;
+  border: 1px solid black;
+  border-radius: 16px;
+  padding: 20px;
+  background-color: black;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
 }
 
 .projet-image {
-    width: 100%;
-    margin-bottom: 20px;
-
+  width: 100%;
+  margin-bottom: 25px;
+  border-radius: 8px;
 }
 
 .projet-titre {
-  .projet-titre {
-    margin: 15px 0;
-}
+  margin: 15px 0;
+  margin-bottom: 20px;
+  color: white;
 }
 
 .projet-description {
   font-size: 16px;
+  margin-bottom: 12px;
+  color: white;
 }
 
 .projet-tech {
-    margin-bottom: 15px;
+  margin-bottom: 20px;
+  color: rgb(129, 125, 125);
 }
 
-.projet-btn {
-  display: inline-block;
-  border: 1px dotted black;
-  background-color: rgb(71, 71, 163);
-  padding: 15px 30px;
-  border-radius: 5px;
-  font-weight: 600;
+/* Actions des projets */
 
+.projet-action {
+  display: flex;
+  gap: 8px;
+  margin-top: auto;
+}
+
+.projet-contenu {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
