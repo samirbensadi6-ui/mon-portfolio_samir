@@ -1,6 +1,6 @@
 .footer {
   /* fond */
-  padding: 90px 0px;
+  padding: 100px 0px;
   background-color: rgb(165, 162, 162);
   border-radius: 5px;
   margin-left: 15px;
@@ -10,6 +10,8 @@
   display: flex;
   flex-direction: column;
   gap: 25px;
+  align-items: center;
+  text-align: center;
 }
 
 .footer h2 {
@@ -40,5 +42,5 @@
 }
 
 .footer-message {
-  
+
 }
