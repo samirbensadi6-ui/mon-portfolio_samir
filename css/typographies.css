@@ -1,15 +1,8 @@
 /* typographies.css */
 
-/*body {
-    font-family: "Manrope", sans-serif;
-    font-weight: 700;
-    color: red;
-}*/
-
 body {
-    font-family: "Manrope", sans-serif !important;
-    font-weight: 700 !important;
-    color: red !important;
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
 }
 
 h1 {
