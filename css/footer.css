@@ -19,11 +19,16 @@
 }
 
 .footer-links {
-  /* espacement */
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
 }
 
 .footer-links a {
-  /* style des liens */
+    text-decoration: none;
+    color: #111111;
 }
 
 .footer-links a:hover {
