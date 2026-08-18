@@ -41,6 +41,7 @@
 .footer-links a:hover {
   background-color: grey;
   border-radius: 5px;
+  font-weight: 700;
 }
 
 .footer-copyright{
