@@ -8,6 +8,11 @@ nav{
     align-items: center;
 }
 
+nav a {
+    color: #111111;
+    text-decoration: none;
+}
+
 nav ul{
     display: flex;
     list-style: none;
