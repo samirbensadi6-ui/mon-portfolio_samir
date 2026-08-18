@@ -26,7 +26,14 @@
     padding: 0;
 }
 
+.footer-links i {
+    font-size: 20px;
+}
+
 .footer-links a {
+    display: flex;
+    align-items: center;
+    gap: 6px;
     text-decoration: none;
     color: #111111;
 }
