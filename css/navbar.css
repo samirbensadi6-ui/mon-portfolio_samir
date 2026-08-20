@@ -1,7 +1,7 @@
 header {
   padding: 25px 0px;
   background-color: #DFF3FA;
-  z-index: 1000;
+  z-index: -1000px;
 }
 
 nav{
