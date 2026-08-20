@@ -6,13 +6,8 @@ header {
     top: 0%;
     width: 100%;
     z-index: 1000;
-    font-size: 20px;
+    font-size: 16px;
 
-}
-
-.bg-black-header {
-    background-color: rgba(0, 0, 0, 0.587);
-    padding: 25px 0;
 }
 
 nav{
