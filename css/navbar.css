@@ -1,7 +1,17 @@
 header {
   padding: 25px 0px;
   background-color: #DFF3FA;
-  z-index: -1000px;
+  background: linear-gradient(to bottom, rgba(178, 132, 4, 1)80% rgba(255, 4, 4, 0)100%);
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    z-index: 1000;
+    font-size: 20px;
+
+}
+
+.bg-black-header {
+    background-color: rgba(0, 0, 0, 0.587);
 }
 
 nav{
