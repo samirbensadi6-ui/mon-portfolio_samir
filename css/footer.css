@@ -49,6 +49,7 @@
 .footer-copyright{
   font-size: 12px;
   margin-top: 25px;
+  color: white;
 }
 
 .footer-intro {
@@ -57,6 +58,10 @@
 
 .footer-message {
 
+}
+
+.footer-p {
+  color: white;
 }
 
 .footer-nav {
