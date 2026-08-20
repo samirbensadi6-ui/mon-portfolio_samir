@@ -12,6 +12,7 @@ header {
 
 .bg-black-header {
     background-color: rgba(0, 0, 0, 0.587);
+    padding: 25px 0;
 }
 
 nav{
