@@ -2,7 +2,7 @@
   /* fond */
   padding: 100px 0px;
   /*background-color: rgb(165, 162, 162);*/
-  background-color: #DFF3FA;
+  background-color: #111111;
   border-radius: 5px;
   margin-left: 15px;
 }
@@ -36,7 +36,8 @@
     align-items: center;
     gap: 6px;
     text-decoration: none;
-    color: #111111;
+    /*color: #111111;*/
+    color: white;
 }
 
 .footer-links a:hover {
