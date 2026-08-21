@@ -21,7 +21,8 @@
   display: inline-block;
   border: 1px dotted black;
   color: white;
-  background-color: rgb(71, 71, 163);
+  /*background-color: rgb(71, 71, 163);*/
+  background-color: gray;
   padding: 10px 25px;
   border-radius: 10px;
   font-weight: 600;
