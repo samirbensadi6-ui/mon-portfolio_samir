@@ -3,9 +3,9 @@
 }
 
 .projet-layout {
-  justify-content: space-between;
-  display: flex;
-  margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
 }
 
 .projet-carte {
@@ -13,7 +13,7 @@
   border-radius: 16px;
   padding: 20px;
   background-color: black;
-  width: 30%;
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
