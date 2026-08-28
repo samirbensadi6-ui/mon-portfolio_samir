@@ -1,8 +1,8 @@
 .footer {
   /* fond */
   padding: 25px 0px;
-  /*background-color: rgb(165, 162, 162);*/
-  background-color:#1563ca;
+  background-color:black;
+  /*background-color:#1563ca;*/
   border-radius: 5px;
   margin-left: 15px;
 }

@@ -1,30 +1,30 @@
 header {
   padding: 25px 0px;
-  /*background-color: black;*/
-   background-color: #1563ca;
-    position: fixed;
-    top: 0%;
-    width: 100%;
-    z-index: 1000;
-    font-size: 16px;
+  background-color: black;
+  /*background-color: #1563ca;*/
+  position: fixed;
+  top: 0%;
+  width: 100%;
+  z-index: 1000;
+  font-size: 16px;
 
 }
 
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 nav a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
-nav ul{
-    display: flex;
-    list-style: none;
-    gap: 2rem;
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
 }
 
 ul {
