@@ -74,9 +74,23 @@
   margin-top: 80px;
 }
 
+
 .plus-grid {
-  display: flex;
-  gap: 20px;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 80px;
+  min-height: 400px;
+  align-items: center;
+  justify-items: center;
+}
+
+.plus-grid .about-titre {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .plus-card {
@@ -84,7 +98,8 @@
   color: white;
   padding: 30px;
   border-radius: 15px;
-  margin-left: 15px;
+  /*margin-left: 15px;*/
+  width: 150px;
 }
 
 .plus-card i {
