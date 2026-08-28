@@ -6,7 +6,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 80px;
+    gap: 200px;
 }
 
 .projet-carte {
@@ -17,6 +17,18 @@
   width: 45%;
   display: flex;
   flex-direction: column;
+}
+
+.projet-inferno{
+  background-color: #df0719ee;
+}
+
+.projet-ecomarin {
+
+}
+
+.projet-toubon {
+
 }
 
 .projet-image {
