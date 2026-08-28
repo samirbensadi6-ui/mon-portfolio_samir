@@ -7,10 +7,12 @@ body {
 
 h1 {
     font-weight: 800;
+    color: rgba(26, 0, 0, 0.404);
 }
 
 h2 {
     font-weight: 800;
+    font-size: 30px;
 }
 
 h3 {
