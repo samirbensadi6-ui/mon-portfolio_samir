@@ -14,30 +14,17 @@
   border-radius: 16px;
   padding: 30px;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-  /*background-color: #1563ca;*/
-  /*background-color:white;*/
-  background-color: #DFF3FA;
-  width: 45%;
+  background-color:white;
+  width: 55%;
   display: flex;
   flex-direction: column;
 }
-
-/*.projet-inferno{
-  border-radius: 16px;
-}
-
-.projet-ecomarin {
-
-}
-
-.projet-toubon {
-
-}*/
 
 .projet-image {
   width: 100%;
   margin-bottom: 25px;
   border-radius: 8px;
+  display: block;
 }
 
 .projet-titre {
