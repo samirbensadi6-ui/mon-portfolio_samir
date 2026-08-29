@@ -57,3 +57,52 @@
   flex-direction: column;
   height: 100%;
 }
+
+/*slide*/
+
+.projet-slides {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.projet-slides .projet-image {
+    width: 100%;
+    display: none;
+    margin-bottom: 0;
+}
+
+.projet-slides .projet-image:first-child {
+    display: block;
+}
+
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 40px;
+    height: 40px;
+
+    border: none;
+    border-radius: 50%;
+
+    background-color: rgba(0, 0, 0, 0.65);
+    color: white;
+
+    font-size: 22px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-prev {
+    left: 15px;
+}
+
+.slider-next {
+    right: 15px;
+}
