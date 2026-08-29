@@ -3,10 +3,10 @@
 }
 
 .projet-layout {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 200px;
 }
 
 .projet-carte {
@@ -14,7 +14,7 @@
   border-radius: 16px;
   padding: 30px;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-  background-color:white;
+  background-color: white;
   width: 55%;
   display: flex;
   flex-direction: column;
@@ -41,7 +41,7 @@
 
 .projet-tech {
   margin-bottom: 20px;
-  color:black;
+  color: black;
 }
 
 /* Actions des projets */
@@ -61,48 +61,108 @@
 /*slide*/
 
 .projet-slides {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    border-radius: 12px;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 12px;
 }
 
 .projet-slides .projet-image {
-    width: 100%;
-    display: none;
-    margin-bottom: 0;
+  width: 100%;
+  display: none;
+  margin-bottom: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease;
 }
 
-.projet-slides .projet-image:first-child {
-    display: block;
+.projet-slides .projet-image.active {
+ opacity: 1;
+}
+
+.projet-slides .projet-image:not(:first-child){
+  display: block;
 }
 
 .slider-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 
-    width: 40px;
-    height: 40px;
+  width: 40px;
+  height: 40px;
 
-    border: none;
-    border-radius: 50%;
+  border: none;
+  border-radius: 50%;
 
-    background-color: rgba(0, 0, 0, 0.65);
-    color: white;
+  background-color: rgba(0, 0, 0, 0.65);
+  color: white;
 
-    font-size: 22px;
-    cursor: pointer;
+  font-size: 22px;
+  cursor: pointer;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .slider-prev {
-    left: 15px;
+  left: 15px;
 }
 
 .slider-next {
-    right: 15px;
+  right: 15px;
+}
+
+/*slide points*/
+
+.slider-dots {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: flex;
+  gap: 8px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+}
+
+/*points actifs*/
+
+.dot.active {
+  background-color: black;
+}
+
+.projet-architecture .dot {
+  background-color: #A66A3F;
+}
+
+.projet-toubon .dot {
+  background-color: #B58A94;
+}
+
+.projet-ecomarin .dot {
+  background-color: #1677B7;
+}
+
+/*point inactifs*/
+
+.projet-architecture .dot:not(.active) {
+  background-color: #A66A3F;
+}
+
+.projet-toubon .dot:not(.active) {
+  background-color: #B58A94;
+}
+
+.projet-ecomarin .dot:not(.active) {
+  background-color: #1677B7;
 }
