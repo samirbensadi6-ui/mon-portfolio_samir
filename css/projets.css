@@ -135,7 +135,8 @@
   padding: 0;
   border: none;
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.6);
+  /*background-color: rgba(255, 255, 255, 0.6);*/
+   background-color: #A66A3F;
   cursor: pointer;
 }
 
@@ -145,19 +146,7 @@
   background-color: black;
 }
 
-.projet-architecture .dot {
-  background-color: #A66A3F;
-}
-
-.projet-toubon .dot {
-  background-color: #B58A94;
-}
-
-.projet-ecomarin .dot {
-  background-color: #1677B7;
-}
-
-/*point inactifs*/
+/* points inactifs*/
 
 .projet-architecture .dot:not(.active) {
   background-color: #A66A3F;
