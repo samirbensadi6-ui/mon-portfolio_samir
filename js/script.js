@@ -22,6 +22,8 @@ sliders.forEach((slider) => {
     slides[index].classList.add("active");
     dots[index].classList.add("active");
 
+    slider.style.height = slides[index].offsetHeight + "px";
+
     currentSlide = index;
   }
 
@@ -56,4 +58,9 @@ sliders.forEach((slider) => {
   });
 
   showSlide(0);
+
+  window.addEventListener("resize", () => {
+    slider.style.height = slides[currentSlide].offsetHeight + "px";
+});
+
 });

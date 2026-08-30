@@ -63,6 +63,7 @@
 .projet-slides {
   position: relative;
   width: 100%;
+  transition: height 0.5s ease;
   overflow: hidden;
   border-radius: 12px;
 }
@@ -70,6 +71,7 @@
 .projet-slides .projet-image {
   width: 100%;
   display: block;
+  height: auto;
   margin-bottom: 0;
   opacity: 0;
   transition: opacity 0.5s ease;
