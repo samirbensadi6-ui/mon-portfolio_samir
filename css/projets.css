@@ -170,3 +170,16 @@
 .projet-ecomarin .dot:not(.active) {
   background-color: #1677B7;
 }
+/*fond des cartes*/
+
+.bg-architecture {
+   background-color: #D17A49;
+}
+
+.bg-toubon {
+   background-color: #B99F9F;
+}
+
+.bg-ecomarin{
+  background-color: #006BA9;
+}
