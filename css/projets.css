@@ -48,8 +48,8 @@
 
 .projet-action {
   display: flex;
-  gap: 8px;
-  margin-top: auto;
+  gap: 10px;
+  padding-top: 25px;
 }
 
 .projet-contenu {
@@ -171,4 +171,31 @@
 
 .bg-ecomarin{
   background-color: #006BA9;
+}
+
+/*structure*/
+
+.projet-contenu {
+    display: flex;
+    flex-direction: column;
+}
+
+.projet-entete,
+.projet-description-bloc,
+.projet-tech-bloc {
+    padding: 25px 0;
+}
+
+.projet-description-bloc,
+.projet-tech-bloc {
+    border-top: 1px solid #e5e5e5;
+}
+
+.projet-label {
+    display: block;
+    margin-bottom: 10px;
+
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
 }
