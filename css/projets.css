@@ -1,5 +1,5 @@
 .projet {
-  padding: 120px 0;
+  padding: 30px 0;
 }
 
 .projet-layout {
@@ -12,12 +12,14 @@
 .projet-carte {
   /*border: 1px solid whitesmoke;*/
   border-radius: 16px;
-  padding: 24px;
+  padding: 18px;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
   background-color: white;
-  width: 55%;
+  width: 82%;
+  
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  gap: 30px;
 }
 
 .projet-image {
@@ -54,15 +56,19 @@
 
 .projet-contenu {
   display: flex;
+  flex: 1;
+  min-width: 0;
   flex-direction: column;
   height: 100%;
+  width: 45px;
 }
 
 /*slide*/
 
 .projet-slides {
   position: relative;
-  width: 100%;
+  width: 50%;
+  flex-shrink: 0;
   transition: height 0.5s ease;
   overflow: hidden;
   border-radius: 12px;
@@ -156,22 +162,12 @@
   background-color: #B58A94;
 }
 
+.projet-toubon {
+    flex-direction: row-reverse;
+}
+
 .projet-ecomarin .dot:not(.active) {
   background-color: #1677B7;
-}
-
-/*fond des cartes*/
-
-.bg-architecture {
-   background-color: #D17A49;
-}
-
-.bg-toubon {
-   background-color: #B99F9F;
-}
-
-.bg-ecomarin{
-  background-color: #006BA9;
 }
 
 /*structure*/
@@ -184,7 +180,7 @@
 .projet-entete,
 .projet-description-bloc,
 .projet-tech-bloc {
-    padding: 25px 0;
+    padding: 12px 0;
 }
 
 .projet-description-bloc,
@@ -199,4 +195,21 @@
     font-size: 12px;
     font-weight: 700;
     letter-spacing: 1.5px;
+}
+
+/*Les numeros des cartes*/
+
+.projet-numero {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+    width: 100px;
+    flex-shrink: 0;
+}
+
+.projet-numero span {
+    font-size: 45px;
+    font-weight: 800;
+    line-height: 0.8;
 }
