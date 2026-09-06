@@ -213,3 +213,19 @@
     font-weight: 800;
     line-height: 0.8;
 }
+
+/*les noms des cartes*/
+
+.projet-nom {
+    border: 2px solid #19b113;
+    border-radius: 8px;
+
+    padding: 10px 18px;
+
+    color: #19b113;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    text-align: center;
+}
