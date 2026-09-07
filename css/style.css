@@ -34,3 +34,59 @@
  background-color: #19b113;
  /*background-color: #333;*/
 }
+
+@media (max-width: 768px) {
+
+    .container {
+        padding: 0 20px;
+    }
+
+    /* PROJETS */
+
+    .projet {
+        padding: 40px 0 80px;
+    }
+
+    .projet-layout {
+        gap: 50px;
+    }
+
+    .projet-carte {
+        width: 100%;
+        padding: 15px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .projet-slides {
+        width: 100%;
+    }
+
+    .projet-contenu {
+        width: 100%;
+    }
+
+    .projet-numero {
+        width: 100%;
+        min-width: 0;
+        justify-content: flex-start;
+    }
+
+    .projet-numero span {
+        font-size: 45px;
+    }
+
+    .projet-description {
+        font-size: 15px;
+    }
+
+    .projet-tech {
+        flex-wrap: wrap;
+    }
+
+    .projet-action {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+}
