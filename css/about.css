@@ -1,6 +1,7 @@
 .about {
   padding: 110px 0;
   border-radius: 10px;
+  background-color: white;
 }
 
 .about-layout {
@@ -39,7 +40,6 @@
   display: inline-block;
   border: 1px dotted black;
   color: white;
-  background-color: rgb(71, 71, 163);
   padding: 10px 25px;
   border-radius: 10px;
   font-weight: 600;
@@ -87,10 +87,10 @@
 }
 
 .plus-grid .about-titre {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .plus-card {
