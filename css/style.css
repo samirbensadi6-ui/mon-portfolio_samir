@@ -21,13 +21,16 @@
   display: inline-block;
   color: white;
   background-color: black;
-  padding: 10px 25px;
+  padding: 10px 20px;
   border-radius: 50px;
   font-weight: 600;
+  font-size: 14px;
+  transition: transform 0.2s ease, background-color 0.2s ease;
   margin-bottom: 25px;
 }
 
 .btn:hover {
- transform: translateY(-3px);
-    background-color: #333;
+ transform: translateY(-2px);
+ background-color: #19b113;
+ /*background-color: #333;*/
 }

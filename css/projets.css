@@ -30,8 +30,8 @@
 }
 
 .projet-titre {
-  margin: 15px 0;
-  margin-bottom: 20px;
+  margin: 10px 0 0;
+  font-size: 28px;
   color: black;
 }
 
@@ -41,10 +41,30 @@
   line-height: 1.6;
   color: black;
 }
-
+/*icones*/
 .projet-tech {
+  display: flex;
+  gap: 10px;
   margin-bottom: 20px;
   color: black;
+}
+
+.tech-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+
+    padding: 6px 10px;
+
+    border: 1px solid #e5e5e5;
+    border-radius: 50px;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.tech-item i {
+    font-size: 18px;
 }
 
 /* Actions des projets */
@@ -191,9 +211,8 @@
 
 .projet-label {
   display: block;
-  margin-bottom: 10px;
-
-  font-size: 12px;
+  margin-bottom: 8px;
+  font-size: 11px;
   font-weight: 700;
   letter-spacing: 1.5px;
 }
