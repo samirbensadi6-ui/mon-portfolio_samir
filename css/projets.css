@@ -13,8 +13,14 @@
 .projet-carte {
   border-radius: 16px;
   padding: 10px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-  background-color: white;
+  box-shadow:
+    0 0 20px rgba(80, 200, 255, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(80, 200, 255, 0.45);
+  background: linear-gradient(145deg,
+      #0b6fa4 0%,
+      #063b5c 45%,
+      #0a5278 100%);
   width: 72%;
   display: flex;
   flex-direction: row;
@@ -31,14 +37,14 @@
 .projet-titre {
   margin: 10px 0 0;
   font-size: 28px;
-  color: black;
+  color: white;
 }
 
 .projet-description {
   max-width: 500px;
   font-size: 16px;
   line-height: 1.6;
-  color: black;
+  color: white;
 }
 
 /*icones*/
@@ -53,16 +59,17 @@
   display: inline-flex;
   align-items: center;
   gap: 6px;
-
   padding: 6px 10px;
   border-radius: 50px;
-
+  border: 1px solid #4dd9ff;
+  background-color: rgba(255, 255, 255, 0.05);
   font-size: 13px;
   font-weight: 600;
 }
 
 .tech-item i {
   font-size: 18px;
+  color: #4dd9ff;
 }
 
 /* Actions des projets */
@@ -212,6 +219,7 @@
 .projet-label {
   display: block;
   margin-bottom: 8px;
+  color: #9deaff;
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 1.5px;
@@ -232,6 +240,7 @@
   font-size: 45px;
   font-weight: 800;
   line-height: 0.8;
+  color: #9deaff;
 }
 
 /*les noms des cartes*/
