@@ -26,9 +26,30 @@
   padding: 45px;
 }
 
-.about-titre {
-  margin-bottom: 20px;
-  text-align: center;
+ .about-titre {
+    display: block;
+    width: fit-content;
+    margin: 0 auto 15px;
+    
+    padding: 10px 22px;
+    color: white;
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    background: linear-gradient(
+        135deg,
+        #0b6f9f,
+        #063b5c
+    );
+
+    border: 1px solid #40cbff;
+    border-radius: 10px;
+
+    box-shadow:
+        0 6px 18px rgba(0, 60, 90, 0.25),
+        inset 0 1px 0 rgba(255, 255, 255, 0.18);
 }
 
 .about-sous-titre {
@@ -45,19 +66,6 @@
   font-weight: 600;
   margin-bottom: 25px;
 }
-
-/*.about-carte{
-  border: 1px solid black;
-  border-radius: 16px;
-  padding: 100px;
-  margin: 0 auto;
-  color: white;
-  background-color: black;
-   background-color: #DFF3FA;
-  width: 80%;
-  display: flex;
-  flex-direction: column;
-}*/
 
 .about-action {
   display: flex;
@@ -94,7 +102,7 @@
 }
 
 .plus-card {
-  background-color: green;
+  background-color: #0a475e;
   color: white;
   padding: 30px;
   border-radius: 15px;

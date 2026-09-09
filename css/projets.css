@@ -1,6 +1,6 @@
 .projet {
   padding: 30px 0;
-  background-color: #50725063;
+  position: relative;
 }
 
 .projet-layout {
@@ -10,17 +10,41 @@
   gap: 120px;
 }
 
+/*demarquation*/
+
+.projet::before {
+    content: "";
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 75%;
+    height: 2px;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        #40cbff,
+        transparent
+    );
+}
+
+/*les cartes*/
+
 .projet-carte {
   border-radius: 16px;
   padding: 10px;
   box-shadow:
-    0 0 20px rgba(80, 200, 255, 0.12),
-    inset 0 1px 0 rgba(255, 255, 255, 0.15);
-  border: 1px solid rgba(80, 200, 255, 0.45);
-  background: linear-gradient(145deg,
-      #0b6fa4 0%,
+    0 8px 25px rgba(0, 40, 70, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.12);
+
+  border: 1px solid rgba(64, 203, 255, 0.35);
+  background: linear-gradient(135deg,
+      #0b5f89 0%,
       #063b5c 45%,
-      #0a5278 100%);
+      #075070 70%,
+      #042f49 100%);
   width: 72%;
   display: flex;
   flex-direction: row;
@@ -98,6 +122,10 @@
   transition: height 0.5s ease;
   overflow: hidden;
   border-radius: 12px;
+  border: 1px solid rgba(64, 203, 255, 0.35);
+  box-shadow:
+    0 0 15px rgba(64, 203, 255, 0.15),
+    0 4px 12px rgba(0, 0, 0, 0.25);
 }
 
 .projet-slides .projet-image {
@@ -257,4 +285,15 @@
   text-transform: uppercase;
 
   text-align: center;
+}
+
+/*titres projets*/
+
+.projet-item-titre {
+    margin: 0 0 10px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #087ca8;
 }

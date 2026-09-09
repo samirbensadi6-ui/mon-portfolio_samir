@@ -1,15 +1,20 @@
 header {
   padding: 20px 0px;
-  background-color: #509b4d80;
-  box-shadow:
-    0 1px 0 #12850e,
-    0 8px 18px rgba(25, 177, 19, 0.25);
-  color: grey;
+  background: linear-gradient(
+        135deg,
+        #0b5f89 0%,
+        #063b5c 45%,
+        #075070 70%,
+        #042f49 100%
+    );
+   box-shadow:
+        0 8px 25px rgba(0, 40, 70, 0.25),
+        inset 0 1px 0 rgba(255, 255, 255, 0.12);
   position: fixed;
   top: 0%;
   width: 100%;
   z-index: 1000;
-  font-size: 16px;
+  font-size: 14px;
 
 }
 
