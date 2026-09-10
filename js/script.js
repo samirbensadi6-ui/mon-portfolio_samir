@@ -64,3 +64,43 @@ sliders.forEach((slider) => {
 });
 
 });
+
+const plusCards = document.querySelectorAll(".plus-card");
+
+plusCards.forEach((card) => {
+
+    const button = card.querySelector(".plus-card-btn");
+
+    button.addEventListener("click", () => {
+
+        card.classList.toggle("active");
+
+        if (card.classList.contains("active")) {
+            button.textContent = "−";
+        } else {
+            button.textContent = "+";
+        }
+
+    });
+
+});
+
+const revealElements = document.querySelectorAll(".reveal");
+
+const observer = new IntersectionObserver((entries) => {
+
+    entries.forEach((entry) => {
+
+        if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+        } else {
+            entry.target.classList.remove("visible");
+        }
+
+    });
+
+});
+
+revealElements.forEach((element) => {
+    observer.observe(element);
+});

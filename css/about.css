@@ -94,29 +94,21 @@
   justify-items: center;
 }
 
-.plus-grid .about-titre {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
 .plus-card {
   background-color: #0a475e;
   color: white;
   padding: 30px;
   border-radius: 15px;
-  /*margin-left: 15px;*/
-  width: 150px;
+  width: 220px;
 }
 
 .plus-card i {
   font-size: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 .plus-card h4 {
-  margin-bottom: 15px;
+  margin-bottom: 0px;
 }
 
 .plus-card p {
@@ -124,6 +116,60 @@
   line-height: 1.6;
 }
 
-.plus-title {}
+/*les branches*/
 
-.plus-text {}
+.plus-card-branches {
+  display: none;
+}
+
+.plus-card.active .plus-card-branches {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.plus-card-branches span {
+  padding: 8px 12px;
+  border: 1px solid rgba(64, 203, 255, 0.5);
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: white;
+  font-size: 14px;
+}
+
+.plus-card-entete {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.plus-card-entete h4 {
+  flex: 1;
+}
+
+/*btn petit plus*/
+
+.plus-card-btn {
+  border: none;
+  background: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 0;
+  flex-shrink: 0;
+}
+
+/*revelation*/
+
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
