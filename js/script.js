@@ -85,7 +85,7 @@ plusCards.forEach((card) => {
 
 });
 
-const revealElements = document.querySelectorAll(".reveal");
+const revealElements = document.querySelectorAll(".reveal, .reveal-projet");
 
 const observer = new IntersectionObserver((entries) => {
 

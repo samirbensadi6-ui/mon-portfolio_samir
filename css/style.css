@@ -93,7 +93,18 @@
     }
 
     .projet-tech {
+        display: flex;
         flex-wrap: wrap;
+        gap: 6px;
+        width: 100%;
+        min-width: 0;
+    }
+
+    .tech-item {
+        padding: 5px 8px;
+        font-size: 12px;
+        max-width: 100%;
+        box-sizing: border-box;
     }
 
     .projet-action {
@@ -124,5 +135,19 @@
 
     .navbar a {
         font-size: 13px;
+    }
+
+    /*les btn dans les cartes projets*/
+
+    .btn {
+        padding: 7px 14px;
+        font-size: 12px;
+    }
+
+    /*titre hobbies*/
+
+    .about-titre {
+        font-size: 22px;
+        padding: 8px 16px;
     }
 }
