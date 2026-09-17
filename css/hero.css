@@ -23,7 +23,7 @@
   margin-top: 20px;
 }
 
-/*dossier portfolio*/
+/*dossier portfolio intro*/
 
 .portfolio-intro {
     position: fixed;
@@ -36,7 +36,17 @@
     justify-content: center;
 
     background: #F4FAFD;
+
+    transition: opacity 0.6s ease, visibility 0.6s ease;
 }
+
+.portfolio-intro.ferme {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/*portfolio dossier*/
+
 
 .portfolio-dossier {
     display: flex;
@@ -51,29 +61,17 @@
     cursor: pointer;
 }
 
-.portfolio-dossier::before {
-    content: "";
+.portfolio-dossier i {
+    font-size: 150px;
+    color: #078ed1;
 
-    width: 150px;
-    height: 105px;
+    filter:
+        drop-shadow(0 0 8px rgba(64, 203, 255, 0.45))
+        drop-shadow(0 10px 15px rgba(0, 60, 90, 0.2));
 
-    background: linear-gradient(
-        135deg,
-        #19cfff,
-        #0878b8 55%,
-        #063b5c
-    );
-
-    border: 2px solid #40cbff;
-    border-radius: 10px;
-
-    box-shadow:
-        0 0 18px rgba(64, 203, 255, 0.45),
-        0 10px 25px rgba(0, 60, 90, 0.25),
-        inset 0 2px 4px rgba(255, 255, 255, 0.35);
+    transition: transform 0.25s ease,
+                filter 0.25s ease;
 }
-
-/*dossier portfolio texte*/
 
 .portfolio-dossier span {
     font-size: 26px;
@@ -81,22 +79,30 @@
     letter-spacing: 2px;
 }
 
-.portfolio-ouvrir {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;
-
-    margin-top: 25px;
-
-    color: #063b5c;
+.portfolio-dossier:hover span {
+    color: #078ed1;
 }
 
-.portfolio-ouvrir:first-line {
-    font-size: 30px;
+.portfolio-dossier:hover i {
+    transform: translateY(-5px);
+    filter:
+        drop-shadow(0 0 15px rgba(64, 203, 255, 0.7))
+        drop-shadow(0 12px 20px rgba(0, 60, 90, 0.25));
 }
 
-.portfolio-ouvrir span {
-    font-size: 14px;
-    letter-spacing: 1px;
+.portfolio-dossier:active i {
+    transform: translateY(2px) scale(0.97);
+}
+
+/*dossier portfolio contenu*/
+
+.portfolio-contenu {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.6s ease;
+}
+
+.portfolio-contenu.ouvert {
+    opacity: 1;
+    visibility: visible;
 }

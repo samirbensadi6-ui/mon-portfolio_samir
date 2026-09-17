@@ -104,3 +104,12 @@ const observer = new IntersectionObserver((entries) => {
 revealElements.forEach((element) => {
     observer.observe(element);
 });
+
+const portfolioIntro = document.querySelector(".portfolio-intro");
+const portfolioDossier = document.querySelector(".portfolio-dossier");
+const portfolioContenu = document.querySelector(".portfolio-contenu");
+
+portfolioDossier.addEventListener("click", () => {
+    portfolioIntro.classList.add("ferme");
+    portfolioContenu.classList.add("ouvert");
+});
