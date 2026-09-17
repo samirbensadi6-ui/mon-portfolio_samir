@@ -322,3 +322,7 @@
 .projet-carte:nth-child(3) {
     transition-delay: 0.4s;
 }
+
+#projects {
+    scroll-margin-top: 100px;
+}

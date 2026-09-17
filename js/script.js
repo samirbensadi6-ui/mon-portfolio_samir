@@ -113,3 +113,43 @@ portfolioDossier.addEventListener("click", () => {
     portfolioIntro.classList.add("ferme");
     portfolioContenu.classList.add("ouvert");
 });
+
+const sousDossiers = document.querySelectorAll(".sous-dossier");
+
+sousDossiers.forEach((dossier) => {
+    dossier.addEventListener("click", () => {
+
+        const nomDossier = dossier.dataset.dossier;
+
+        if (nomDossier === "projets") {
+            document.querySelector("#projects").scrollIntoView();
+        }
+
+    });
+});
+
+const projetsDossier = document.querySelector(".sous-dossier");
+
+projetsDossier.addEventListener("click", () => {
+    const premiereCarte = document.querySelector(".projet-carte");
+
+    const position = premiereCarte.getBoundingClientRect().top + window.scrollY;
+
+    window.scrollTo({
+        top: position - 100,
+        behavior: "smooth"
+    });
+});
+
+const aProposDossier = document.querySelector("#dossier-a-propos");
+
+aProposDossier.addEventListener("click", () => {
+    const aPropos = document.querySelector("#about");
+
+    const position = aPropos.getBoundingClientRect().top + window.scrollY;
+
+    window.scrollTo({
+        top: position - 100,
+        behavior: "smooth"
+    });
+});

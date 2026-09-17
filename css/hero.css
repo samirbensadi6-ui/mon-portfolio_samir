@@ -1,3 +1,11 @@
+.hero {
+  padding: 100px 0 0;
+}
+
+.hero-layout {
+    min-height: auto;
+}
+
 .hero h1 {
   padding: 20px 0;
   font-size: 45px;
@@ -26,83 +34,162 @@
 /*dossier portfolio intro*/
 
 .portfolio-intro {
-    position: fixed;
-    inset: 0;
-    z-index: 2000;
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
-    background: #F4FAFD;
+  background: #F4FAFD;
 
-    transition: opacity 0.6s ease, visibility 0.6s ease;
+  transition: opacity 0.6s ease, visibility 0.6s ease;
 }
 
 .portfolio-intro.ferme {
-    opacity: 0;
-    visibility: hidden;
+  opacity: 0;
+  visibility: hidden;
 }
 
 /*portfolio dossier*/
 
 
 .portfolio-dossier {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+   padding: 0 0 40px;
+    margin-top: -80px;
 
-    border: none;
-    background: none;
+  border: none;
+  background: none;
 
-    color: #063b5c;
-    cursor: pointer;
+  color: #063b5c;
+  cursor: pointer;
 }
 
 .portfolio-dossier i {
-    font-size: 150px;
-    color: #078ed1;
+  font-size: 150px;
+  color: #078ed1;
 
-    filter:
-        drop-shadow(0 0 8px rgba(64, 203, 255, 0.45))
-        drop-shadow(0 10px 15px rgba(0, 60, 90, 0.2));
+  filter:
+    drop-shadow(0 0 8px rgba(64, 203, 255, 0.45)) drop-shadow(0 10px 15px rgba(0, 60, 90, 0.2));
 
-    transition: transform 0.25s ease,
-                filter 0.25s ease;
+  transition: transform 0.25s ease,
+    filter 0.25s ease;
 }
 
 .portfolio-dossier span {
-    font-size: 26px;
-    font-weight: 700;
-    letter-spacing: 2px;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 2px;
 }
 
 .portfolio-dossier:hover span {
-    color: #078ed1;
+  color: #078ed1;
 }
 
 .portfolio-dossier:hover i {
-    transform: translateY(-5px);
-    filter:
-        drop-shadow(0 0 15px rgba(64, 203, 255, 0.7))
-        drop-shadow(0 12px 20px rgba(0, 60, 90, 0.25));
+  transform: translateY(-5px);
+  filter:
+    drop-shadow(0 0 15px rgba(64, 203, 255, 0.7)) drop-shadow(0 12px 20px rgba(0, 60, 90, 0.25));
 }
 
 .portfolio-dossier:active i {
-    transform: translateY(2px) scale(0.97);
+  transform: translateY(2px) scale(0.97);
 }
 
 /*dossier portfolio contenu*/
 
 .portfolio-contenu {
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.6s ease;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.6s ease;
 }
 
 .portfolio-contenu.ouvert {
-    opacity: 1;
-    visibility: visible;
+  opacity: 1;
+  visibility: visible;
+}
+
+/* devise */
+
+.hero-layout {
+  position: relative;
+}
+
+.hero-devise {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  padding: 14px 24px;
+
+  border: 1px solid #40cbff;
+  border-radius: 8px;
+
+  background: rgba(6, 59, 92, 0.75);
+
+  color: #9deaff;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: "Caveat", cursive;
+
+  box-shadow:
+    0 0 12px rgba(64, 203, 255, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.12);
+}
+
+/*portfolio sous dossier*/
+
+.dossiers-grid {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 50px;
+}
+
+.sous-dossier {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+
+  border: none;
+  background: none;
+
+  color: #063b5c;
+  cursor: pointer;
+}
+
+.sous-dossier i {
+  font-size: 65px;
+  color: #078ed1;
+
+  filter:
+    drop-shadow(0 0 6px rgba(64, 203, 255, 0.35)) drop-shadow(0 6px 10px rgba(0, 60, 90, 0.15));
+
+  transition:
+    transform 0.25s ease,
+    filter 0.25s ease;
+}
+
+.sous-dossier span {
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.sous-dossier:hover i {
+  transform: translateY(-4px);
+
+  filter:
+    drop-shadow(0 0 12px rgba(64, 203, 255, 0.6)) drop-shadow(0 8px 14px rgba(0, 60, 90, 0.2));
+}
+
+.sous-dossier:hover span {
+  color: #078ed1;
 }

@@ -1,5 +1,9 @@
-body{
-    background-color: #F4FAFD;
+body {
+    background-image: url("/asset/landscape/landscape_blue.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
     color: #111111;
 }
 
@@ -10,6 +14,5 @@ body{
 }
 
 section{
-    padding: 120px 0;
+    padding: 10px 0;
 }
-
