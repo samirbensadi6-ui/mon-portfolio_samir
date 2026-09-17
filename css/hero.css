@@ -26,30 +26,77 @@
 /*dossier portfolio*/
 
 .portfolio-intro {
-  position: fixed;
-  inset: 0;
-  z-index: 2000;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+    position: fixed;
+    inset: 0;
+    z-index: 2000;
 
-  background: #F4FAFD;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background: #F4FAFD;
 }
 
 .portfolio-dossier {
-  padding: 18px 35px;
-  color: white;
-  font-size: 32px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  background: linear-gradient(135deg,
-      #0b6f9f,
-      #063b5c);
-  border: 1px solid #40cbff;
-  border-radius: 10px;
-  box-shadow:
-    0 6px 18px rgba(0, 60, 90, 0.25),
-    inset 0 1px 0 rgba(255, 255, 255, 0.18);
-  cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+
+    border: none;
+    background: none;
+
+    color: #063b5c;
+    cursor: pointer;
+}
+
+.portfolio-dossier::before {
+    content: "";
+
+    width: 150px;
+    height: 105px;
+
+    background: linear-gradient(
+        135deg,
+        #19cfff,
+        #0878b8 55%,
+        #063b5c
+    );
+
+    border: 2px solid #40cbff;
+    border-radius: 10px;
+
+    box-shadow:
+        0 0 18px rgba(64, 203, 255, 0.45),
+        0 10px 25px rgba(0, 60, 90, 0.25),
+        inset 0 2px 4px rgba(255, 255, 255, 0.35);
+}
+
+/*dossier portfolio texte*/
+
+.portfolio-dossier span {
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.portfolio-ouvrir {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+
+    margin-top: 25px;
+
+    color: #063b5c;
+}
+
+.portfolio-ouvrir:first-line {
+    font-size: 30px;
+}
+
+.portfolio-ouvrir span {
+    font-size: 14px;
+    letter-spacing: 1px;
 }
