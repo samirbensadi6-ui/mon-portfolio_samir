@@ -10,15 +10,46 @@
   /*color: rgb(25, 177, 19);*/
   color: blue;
   text-transform: uppercase;
-  
+
 }
 
-.hero-text{
+.hero-text {
   max-width: 550px;
   margin-bottom: 35px;
   font-size: 20px;
 }
 
 .hero-btn {
-    margin-top: 20px;
+  margin-top: 20px;
+}
+
+/*dossier portfolio*/
+
+.portfolio-intro {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background: #F4FAFD;
+}
+
+.portfolio-dossier {
+  padding: 18px 35px;
+  color: white;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  background: linear-gradient(135deg,
+      #0b6f9f,
+      #063b5c);
+  border: 1px solid #40cbff;
+  border-radius: 10px;
+  box-shadow:
+    0 6px 18px rgba(0, 60, 90, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.18);
+  cursor: pointer;
 }
