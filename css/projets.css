@@ -326,3 +326,12 @@
 #projects {
     scroll-margin-top: 100px;
 }
+
+/*photos hobbies*/
+
+.plus-card-photos img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+}
